@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <!-- Header của menu -->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/navigation_header_height"
+        app:srcCompat="@drawable/ic_title_animal"
+        tools:ignore="ContentDescription" />
+
+    <!-- Item Sea -->
+    <TableRow
+        android:id="@+id/seas_menu"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/navigation_item_height"
+        android:background="@android:color/white"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/navigation_padding"
+        android:paddingRight="@dimen/navigation_padding"
+        android:tag="1">
+
+        <ImageView
+            android:layout_width="@dimen/navigation_item_height"
+            android:layout_height="@dimen/navigation_item_height"
+            android:src="@drawable/bg_seas"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/navigation_margin_left"
+            android:text="@string/seas_menu"
+            android:textColor="@color/orange_700"
+            android:textSize="@dimen/navigation_text_size"/>
+    </TableRow>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/orange_200" />
+
+    <!-- Item Mammals -->
+    <TableRow
+        android:id="@+id/mammals_menu"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/navigation_item_height"
+        android:background="@android:color/white"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/navigation_padding"
+        android:paddingRight="@dimen/navigation_padding"
+        android:tag="2">
+
+        <ImageView
+            android:layout_width="@dimen/navigation_item_height"
+            android:layout_height="@dimen/navigation_item_height"
+            android:src="@drawable/bg_mammals"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/navigation_margin_left"
+            android:text="@string/mammals_menu"
+            android:textColor="@color/orange_700"
+            android:textSize="@dimen/navigation_text_size"/>
+    </TableRow>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/orange_200" />
+
+    <!-- Item Birds -->
+    <TableRow
+        android:id="@+id/birds_menu"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/navigation_item_height"
+        android:background="@android:color/white"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/navigation_padding"
+        android:paddingRight="@dimen/navigation_padding"
+        android:tag="3">
+
+        <ImageView
+            android:layout_width="@dimen/navigation_item_height"
+            android:layout_height="@dimen/navigation_item_height"
+            android:src="@drawable/bg_birds"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/navigation_margin_left"
+            android:text="@string/birds_menu"
+            android:textColor="@color/orange_700"
+            android:textSize="@dimen/navigation_text_size"/>
+    </TableRow>
+</LinearLayout>

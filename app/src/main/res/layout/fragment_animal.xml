@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--Nội dung chương trình-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!--ActionBar-->
+        <include layout="@layout/action_bar" />
+
+        <!--Ảnh tiêu đề-->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/home_header_height"
+            android:src="@drawable/ic_title_animal"
+            tools:ignore="ContentDescription" />
+
+        <!--Nội dung chính-->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_animal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:listitem="@layout/item_animal" />
+    </LinearLayout>
+
+    <!--Navigation menu-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@color/white" >
+
+        <include layout="@layout/item_menu"/>
+    </LinearLayout>
+</androidx.drawerlayout.widget.DrawerLayout>

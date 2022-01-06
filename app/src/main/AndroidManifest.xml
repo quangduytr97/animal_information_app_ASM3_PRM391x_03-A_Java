@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.prm391x_asm3_option2_duytqfx11834">
+
+    <!-- Quyền đọc trạng thái cuộc gọi -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <!-- Quyền đọc thông tin nhật ký cuộc gọi -->
+    <uses-permission android:name="android.permission.READ_CALL_LOG"/>
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.PRM391x_ASM3_option2_duytqFX11834">
+        <activity
+            android:name="com.example.prm391x_asm3_option2_duytqfx11834.activity.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Khai báo Broadcast Receiver -->
+        <receiver android:name=".receiver.PhoneStateEmojiReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.PHONE_STATE"/>
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

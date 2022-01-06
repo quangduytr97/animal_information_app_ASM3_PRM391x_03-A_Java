@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Animal</string>
+    <string name="navigation_header">Animal cute</string>
+    <string name="seas_menu">Seas</string>
+    <string name="mammals_menu">Mammals</string>
+    <string name="birds_menu">Birds</string>
+    <string name="home_text">Open menu to enjoy your app!!!</string>
+    <string name="phone">Phone</string>
+    <string name="save_button">SAVE</string>
+    <string name="delete_button">DELETE</string>
+</resources>
